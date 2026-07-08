@@ -11,7 +11,7 @@ Calibration should be performed in this order:
 
 1. Rotation Distance
 2. Heater PID Tuning
-3. Bed Tramming
+3. Bed Leveling (AKA 'Bed Tramming')
 4. Axis Twist Compensation
 5. Z-Offset
 6. Bed Mesh
