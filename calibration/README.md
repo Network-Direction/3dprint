@@ -9,9 +9,9 @@ While it should work on other printers, it assumes an Ender 3 v3 SE, with the Kl
 
 Calibration should be performed in this order:
 
-1. Rotation Distance
-2. Heater PID Tuning
-3. Approximate bed level
+1. Approximate bed level
+2. Rotation Distance
+3. Heater PID Tuning
 4. Axis Twist Compensation
 5. Z-Offset
 6. Bed Leveling (AKA 'Bed Mesh')
