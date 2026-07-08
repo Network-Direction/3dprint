@@ -102,6 +102,20 @@ Now, repeat the process for the 'Y' area.
 
 </br></br>
 ---
+## Configuration
+
+With those two values in hand, update the settings in `printer.cfg`.
+
+```ini
+[input_shaper]
+shaper_freq_x: ...  # X frequency
+shaper_freq_y: ...  # Y frequency
+```
+
+
+
+</br></br>
+---
 ## References
 
 [https://www.klipper3d.org/Resonance_Compensation.html]
