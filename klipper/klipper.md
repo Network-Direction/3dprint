@@ -11,7 +11,9 @@ Most of this is based around [https://athemis.me/projects/klipper_guide/]. There
 </br></br>
 > [!WARNING]
 > A result of this process is the LCD control screen is disabled.
+> 
 > Some limited functionality can be restored, but it won't be the same as before.
+> 
 > The web interface is used as a replacement for this
 
 
@@ -203,7 +205,9 @@ You may need to click **Restart Firmware** to get it to recognise the printer.
 
 > [!NOTE]
 > I found that some USB cables wouldn't work. Some may be for chargins devices only.
+> 
 > If you have troubles, try changing cables.
+> 
 > Also see [USB Troubleshooting](usb_tshoot.md)
 
 
