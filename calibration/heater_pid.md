@@ -22,10 +22,11 @@ The Klipper firmware heats and cools the print bed and extruder a few times and 
 
 This can be run as Klipper commands, but it's easier to use the built-in macros.
 
-1. Dashboard > Macros area
-2. Click the drop down next to 'PID BED'
-3. Enter the temperature you typically use, such as 60
-4. Wait for ages
+1. Home the print head
+2. Dashboard > Macros area
+3. Click the drop down next to 'PID BED'
+4. Enter the temperature you typically use, such as 60
+5. Wait for ages
    Must be patient, this takes a while, 15min or so
    On the temperature graph you will see the print bed heating up and cooling repeatedly
    When it's done, some new values will appear in the console
@@ -40,18 +41,21 @@ This can be run as Klipper commands, but it's easier to use the built-in macros.
 
 If the macros aren't available, you can run these commands:
 
+</br></br>
 Calibrate the bed:
-```gcode
-PID_BED TARGET=60
+```
+PID_CALIBRATE HEATER=heater_bed TARGET=60
 ```
 
+</br></br>
 Calibrate the extruder:
-```gcode
-PID_EXTRUDER TARGET=220
+```
+PID_CALIBRATE HEATER=extruder TARGET=220
 ```
 
+</br></br>
 Save the config:
-```gcode
+```
 SAVE_CONFIG
 ```
 
