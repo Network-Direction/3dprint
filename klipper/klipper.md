@@ -193,9 +193,11 @@ Go back to the 'Machine' tab in mainsail. `klipper.bin` should be visible in the
 6. Remove the file from the SD card and replace
 7. Turn on the printer
 
+</br></br>
 > [!WARNING]
 > Apparently the newer motherboard required the bin file to be in a directory called `STM32F4_UPDATE` on the SD Card.
 
+</br></br>
 The LCD panel on the printer will show a default blue image.
 
 
@@ -203,6 +205,7 @@ Connect the RPi to the printer with the USB cable, and go back to mainsail.
 
 You may need to click **Restart Firmware** to get it to recognise the printer.
 
+</br></br>
 > [!NOTE]
 > I found that some USB cables wouldn't work. Some may be for chargins devices only.
 > 
