@@ -204,6 +204,7 @@ You may need to click **Restart Firmware** to get it to recognise the printer.
 > [!NOTE]
 > I found that some USB cables wouldn't work. Some may be for chargins devices only.
 > If you have troubles, try changing cables.
+> Also see [USB Troubleshooting](usb_tshoot.md)
 
 
 </br></br>
