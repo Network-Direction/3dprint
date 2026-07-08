@@ -141,6 +141,10 @@ Now try printing the ring tower again. With these settings there should be no ri
 
 If there is still ringing, change shaper and try again.
 
+> [!NOTE]
+> Do not enter `SET_INPUT_SHAPER SHAPER_FREQ_X=0 SHAPER_FREQ_Y=0` this time.
+> This sets the x and y frequency to zero. We want to use the values in the config file.
+
 
 
 </br></br>
