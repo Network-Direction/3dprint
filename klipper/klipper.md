@@ -10,7 +10,7 @@ Most of this is based around [https://athemis.me/projects/klipper_guide/]. There
 
 </br></br>
 > [!WARNING]
-> A result of this process is the LCD control screen is disabled.
+> A result of this process is the LCD control screen is disabled.</br>
 > 
 > Some limited functionality can be restored, but it won't be the same as before.
 > 
