@@ -13,6 +13,10 @@ The way this is achieved will depend on the model of printer. Some have automati
 ---
 ## Calibration
 
+Before starting:
+1. Preheat the bed to normal temp
+2. Preheat the extruder to a normal temp
+
 In the mainsail UI, you can go to the 'heightmap' tab, and calibrate the bed mesh from there. Once it is done, you can also save it as a profile to be used later.
 
 Alternatively, you can run the `BED_MESH_CALIBRATE` command, which effectively does the same thing.
