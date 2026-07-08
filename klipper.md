@@ -97,3 +97,101 @@ Start the KIAUH script:
 
 
 
+</br></br>
+---
+## Configuration Files
+
+Open a web browser and navigate to http://IP-of-your-RPi
+
+You will see a dashboard with some error messages. These errors are because the printer is not connected yet.
+
+
+</br></br>
+There will be several configuration files that we will need to work with. These are present regardless of which UI (mainsail or fluidd) you choose to use.
+
+The main ones are:
+
+**printer.cfg** - Configuration for Klipper running on the printer.
+
+**macro.cfg** - A collection of macros, which are a collection of g-code commands to make some tasks easier.
+
+**mainsail.cfg** - Mainsail UI configuration, as well as some built in macros we can use for things like calibration.
+
+**moonraker.conf** - Settings for the moonraker API.
+
+</br></br>
+Mostly we will work with `printer.cfg` and `macros.cfg`.
+
+</br></br>
+In the mainsail UI, click the 'Machine' tab on the left. This will show you a list of config files.
+
+`printer.cfg` and `macros.cfg` should already be there.
+
+However, we want to replace these with the ones found here: [https://github.com/shubham0x13/ender-3-v3-se-klipper-config].
+
+These are already tuned for the Ender 3 printer. Download them, and replace the existing files with these.
+
+
+
+</br></br>
+---
+## Klipper Firmware
+
+Now to create the custom Klipper firmware that will be installed on the printer.
+
+We generate this on the RPi, and then flash the printer through the standard SD Card.
+
+
+</br></br>
+### Create Firmware
+
+First, SSH to the RPI, and run `menuconfig` from the klipper directory (within your home directory).
+
+```bash
+cd ~/klipper
+make menuconfig
+```
+
+
+</br></br>
+This will start a script that will build the firmware.
+
+<img width="581" height="75" alt="image" src="https://github.com/user-attachments/assets/c9fb25b4-7c8c-4172-9e7e-870416729e97" />
+
+</br></br>
+The older models are configured as shown in the image above.
+
+For the newer motherboard (the 'CR4NS200320C14'), change these values:
+* Processor Model: STM32F401
+* Bootloader Offset: 64KiB
+
+
+</br></br>
+Save your changes and quit.
+
+Next, run `make` to build the firmware. This will create a file called `~/klipper/out/klipper.bin`.
+
+Copy this file to the 'config' directory (this is where `printer.cfg` is):
+
+```bash
+cp ~/klipper/out/klipper.bin ~/printer_data/config/
+```
+
+
+</br></br>
+### Flash the Printer
+
+Go back to the 'Machine' tab in mainsail. `klipper.bin` should be visible in the file list. Download it.
+
+1. Make sure the printer is off
+2. Transfer the new firmware to the SD Card
+3. Insert the card into the printer, and turn it on
+4. Wait for 15 seconds
+
+
+> [WARNING]
+> Apparently the newer motherboard required the bin file to be in a directory called `STM32F4_UPDATE` on the SD Card.
+
+
+
+
