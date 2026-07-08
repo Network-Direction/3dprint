@@ -11,10 +11,11 @@ Calibration should be performed in this order:
 
 1. Rotation Distance
 2. Heater PID Tuning
-3. Axis Twist Compensation
-4. Z-Offset
-5. Bed Leveling (AKA 'Bed Mesh')
-6. Resonance Compensation (AKA 'Input Shaper')
-7. Pressure Advance
-8. Flow Rate
+3. Approximate bed level
+4. Axis Twist Compensation
+5. Z-Offset
+6. Bed Leveling (AKA 'Bed Mesh')
+7. Resonance Compensation (AKA 'Input Shaper')
+8. Pressure Advance
+9. Flow Rate
 
