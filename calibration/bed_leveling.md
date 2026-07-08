@@ -13,33 +13,26 @@ The way this is achieved will depend on the model of printer. Some have automati
 ---
 ## Calibration
 
-The Ender 3 v3 has a single CR-Touch probe, which means bed leveling is automated. No need for adjustment screws.
+In the mainsail UI, you can go to the 'heightmap' tab, and calibrate the bed mesh from there. Once it is done, you can also save it as a profile to be used later.
 
-1. Make sure the nozzle is clean
-   Remove any bits of filament
-   This may require preheating the nozzle to clean it up
-3. Home the printer (`G28`)
-4. Run `PROBE_CALIBRATE`
-   The print head will probe a few times
-   A window will appear with manual tuning information
-6. Place a piece of paper on the print bed, below the print head
-7. Using the manual probe buttons, adjust the height of the print head
-   Moving the paper around should have a small amount of friction
-8. When you have the right results, click 'accept'
-9. Run 'SAVE_CONFIG'
+Alternatively, you can run the `BED_MESH_CALIBRATE` command, which effectively does the same thing.
 
-
-Next, run a repeatibility check. This runs the probe check several times and records values.
-
-1. Home the print head
-2. Run 'PROBE_ACCURACY'
-
-Ideally, the max and min values will be the same. However, this isn't usual, as there's always some deviation.
-
-The range value should be 0.025mm or less.
 
 
 </br></br>
+---
+## Adaptive Calibration
+
+Alternatively, you can use a macro that runs at the start of each print. This runs a command like `BED_MESH_CALIBRATE ADAPTIVE=1`.
+
+This runs the same test, but it probes the area that will be used by the print job.
+
+This is good, but will take longer for the print to start.
+
+
+
+</br></br>
+---
 ## References
 
 [https://www.klipper3d.org/Bed_Level.html]
