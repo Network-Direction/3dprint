@@ -187,10 +187,41 @@ Go back to the 'Machine' tab in mainsail. `klipper.bin` should be visible in the
 2. Transfer the new firmware to the SD Card
 3. Insert the card into the printer, and turn it on
 4. Wait for 15 seconds
+5. Turn off the printer
+6. Remove the file from the SD card and replace
+7. Turn on the printer
 
-
-> [WARNING]
+> [!WARNING]
 > Apparently the newer motherboard required the bin file to be in a directory called `STM32F4_UPDATE` on the SD Card.
+
+The LCD panel on the printer will show a default blue image.
+
+
+Connect the RPi to the printer with the USB cable, and go back to mainsail.
+
+You may need to click **Restart Firmware** to get it to recognise the printer.
+
+
+</br></br>
+### Testing
+
+The firmware is installed on the printer, and the software is now ready to go.
+
+A Simple way to test it is working is to click the home button in the 'Toolhead' area.
+
+<img width="204" height="154" alt="image" src="https://github.com/user-attachments/assets/9af31dd1-27c5-4f2a-b2f7-4b0567658d55" />
+
+
+</br></br>
+---
+## Next Steps
+
+Now that's done, your next steps are:
+* Calibrate the printer
+* Learn about Macros
+* Configure the slicer
+
+
 
 
 
