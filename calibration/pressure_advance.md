@@ -45,6 +45,44 @@ Next, start the print.
 
 
 </br></br>
+### Interpreting the Results
+
+The commands above tell klipper to adjust the pressure advance values on each layer of the print. Higher layers have a higher value.
+
+Layers below the ideal value will have blobbing at the corners.
+
+Layers above the ideal value will have more rounded corners, and may have poor extrusion leading up to the corner.
+
+If the print seems to have passed the ideal value, the print can be cancelled.
+
+
+</br></br>
+Use calipers to find the height that has the best quality corners. If in doubt, use the lower values.
+
+Calculate the best pressure advance value with this formula:
+
+```
+pressure_advance = <start> + <measured_height> * <factor>
+```
+
+The <start> and <factor> values come from the previous `TUNING_TOWER` command. They are '0' and '0.005' respectively.
+
+
+
+</br></br>
+---
+## Configuration
+
+Once the best pressure advance value is known, set it in the `printer.cfg` file:
+
+```ini
+[extruder]
+pressure_advance = <calculated_value>
+```
+
+
+
+</br></br>
 ---
 ## References
 
