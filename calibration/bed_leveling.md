@@ -6,7 +6,7 @@ The goal of bed leveling is to make sure the print nozzle remains exactly the ex
 
 The height of the nozzle from the bed is the Z-axis. For good quality prints, the Z-axis should be accurate to about 0.025mm.
 
-The way this is achieved will depend on the model of printer. Some have automatic bed leveling, others use adjustment screws.
+The way this is achieved will depend on the model of printer. Some have automatic bed leveling, others use adjustment screws (this is called bed tramming).
 
 
 </br></br>
