@@ -104,6 +104,8 @@ Now, repeat the process for the 'Y' area.
 ---
 ## Configuration
 
+### Shaper Settings
+
 With those two values in hand, update the settings in `printer.cfg`.
 
 ```ini
@@ -111,6 +113,33 @@ With those two values in hand, update the settings in `printer.cfg`.
 shaper_freq_x: ...  # X frequency
 shaper_freq_y: ...  # Y frequency
 ```
+
+
+</br></br>
+### Input Shapers
+
+Input shapers are essentially a smoothing algorithm. There are a few to choose from in Klipper, but usually it goes like this:
+
+1. Try the `MZV` shaper first; It's the gentler option
+2. If that's not suitable, try the `EI` shaper
+3. If that's no good, well you're in interesting territory; You need to find another shaper
+
+
+</br></br>
+To set the shaper, update the settings in `printer.cfg`:
+
+```ini
+[input_shaper]
+shaper_freq_x: ...  # X frequency
+shaper_freq_y: ...  # Y frequency
+shaper_type: mzv
+```
+
+
+</br></br>
+Now try printing the ring tower again. With these settings there should be no ringing.
+
+If there is still ringing, change shaper and try again.
 
 
 
