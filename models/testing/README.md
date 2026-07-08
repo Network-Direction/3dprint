@@ -9,4 +9,5 @@ These models come from various places on the internet. I can't remember them all
 | -------------------- | ----------------------------------------------------------- |
 | Benchy.3mf           | Standard benchy model for testing                           |
 | First Layer Test.3mf | A single layer print to test bed adhesion and Z-axis offset |
+| ringing_tower.3mf    | For calibrating resonance compensation                      |
 
