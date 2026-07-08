@@ -39,18 +39,19 @@ The values above assume a 220x220mm bed. 20mm is left of the margins of this are
 </br></br>
 ### Part 2 - Calibration
 
-1. Clean the nozzle so there's no filament there
-2. Home the print head (`G28`)
-3. Run `AXIS_TWIST_COMPENSATION_CALIBRATE`
+1. Preheat the bed and the hot end
+2. Clean the nozzle so there's no filament there
+3. Home the print head (`G28`)
+4. Run `AXIS_TWIST_COMPENSATION_CALIBRATE`
    This will probe at several places on the print bed
    For each one, a manual probe window will pop up
-4. Add a sheet of paper to the bed
-5. Adjust the height of the probe until the nozzle touches the paper
-6. Fine tune until there is some friction when moving the paper around
-7. Click accept
-8. Repeat for remaining points
+5. Add a sheet of paper to the bed
+6. Adjust the height of the probe until the nozzle touches the paper
+7. Fine tune until there is some friction when moving the paper around
+8. Click accept
+9. Repeat for remaining points
    There should be three points in total; Left, centre, and right
-9. Run `SAVE_CONFIG`
+10. Run `SAVE_CONFIG`
 
 
 
