@@ -24,23 +24,6 @@ Alternatively, you can run the `BED_MESH_CALIBRATE` command, which effectively d
 This profile can now be loaded before print jobs start.
 
 
-</br></br>
----
-## Manual Tuning
-
-In some cases like this one, the bed level is way out. The range is very large (0.542mm in this case).
-
-<img width="330" height="266" alt="image" src="https://github.com/user-attachments/assets/5d58fdce-ef70-4b7f-ad3d-cfac467a8384" />
-
-<img width="274" height="147" alt="image" src="https://github.com/user-attachments/assets/6e3e1b32-6223-411a-adfa-4329db8458bd" />
-
-
-</br></br>
-We can leave it as it is and let software handle it. However, this is not always ideal, as the software was really only meant for fine tuning.
-
-This needs manual leveling, which usually means adding spacers under the print bed.
-
-
 
 </br></br>
 ---
