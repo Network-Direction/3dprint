@@ -76,6 +76,27 @@ If ringing is clearly visible, you can stop the print early. Also, if accelerati
 </br></br>
 ### Interpreting the Results
 
+The front side of the model has a vertical groove.
+
+The back of the print has a large 'X' and 'Y' embossed. These tell us which part of the model is used to calibrate each axis.
+
+Starting with the 'X' area:
+1. Ignore the first two 'echos' next to the vertical groove
+2. Using a marker, mark the next echo (eg, on the top of the 'wave')
+3. Place a second mark several echo's over (horizontally)
+4. Count the number of echos between the two marks; Call this _n_ (eg, n = 6 if there are 6 echos)
+5. Using calipers, measure the distance between the two marks; Call this _d_ (eg, d = 12.34mm)
+6. Get the print speed of the outer walls; In the settings above, this is 100mm/s; Call this _v_.
+7. Use the formula below to get the ringing frequency in Hz
+
+```
+frequency = v * n / d
+```
+
+Using the example values above, the ringing frequency is 100 x 6 / 12.34, or 48.62Hz.
+
+</br></br>
+Now, repeat the process for the 'Y' area.
 
 
 
