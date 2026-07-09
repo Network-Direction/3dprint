@@ -72,6 +72,19 @@ G1 X100 Y50 Z0.2 F1500 E5    ; Move to 100,50,0.2 at a rate of 1500mm/min, and e
 
 
 </br></br>
+#### Dwell - G4
+
+Pauses the command queue, and waits for a period of time. With no arguments, this is the same as `M400`, which causes g-code processing to pause until all other commands are complete (eg, waits for heating or cooling)
+
+**Arguments:**
+
+The `S` argument is the number of ms to dwell.
+
+The `P` argument is the number of seconds to dwell. If `S` is also included, `S` will take precedence.
+
+
+
+</br></br>
 #### Home Position - G28
 
 Tells the printer to move the print head back to the home coordinates.
@@ -155,6 +168,10 @@ These include:
 * M205
 
 
+</br></br>
+---
+## References
 
+Gcodes can be found here: [https://marlinfw.org/docs/gcode/G004.html]
 
 
