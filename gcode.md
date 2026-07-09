@@ -70,6 +70,13 @@ The `E` argument is how much filament to extrude during the move. Technically, t
 G1 X100 Y50 Z0.2 F1500 E5    ; Move to 100,50,0.2 at a rate of 1500mm/min, and extrude 5mm of filament
 ```
 
+</br></br>
+A negative value on `E` will retract the filament:
+
+```gcode
+G1 E-1.0 F2100                ; Retracts 1mm of filament
+```
+
 
 </br></br>
 #### Dwell - G4
