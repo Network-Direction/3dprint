@@ -201,6 +201,26 @@ Go back to the 'Machine' tab in mainsail. `klipper.bin` should be visible in the
 The LCD panel on the printer will show a default blue image.
 
 
+</br></br>
+### Prepare a USB Cable
+
+There is a catch when using an RPi with your printer. The RPi will supply +5v across the USB port.
+
+The problem is, if the printer is turned off, the RPi will supply the +5v and attempt to power the printer's motherboard.
+
+This creates some weird side effects, and may cause damage.
+
+There are a few solutions:
+* Never leave your printer connected to USB when it is off (boo)
+* Use a USB-A to USB-C cable, and [tape off the +5v pin on the USB-A End](https://community.octoprint.org/t/put-tape-on-the-5v-pin-why-and-how/13574)
+* Modify your cable by cutting the red wire within (the power wire)
+* [Printing a shield](https://www.thingiverse.com/thing:3044586) of some sort to block the pin
+* Buying a USB power blocker
+
+
+</br></br>
+### Connecting the RPi
+
 Connect the RPi to the printer with the USB cable, and go back to mainsail.
 
 You may need to click **Restart Firmware** to get it to recognise the printer.
