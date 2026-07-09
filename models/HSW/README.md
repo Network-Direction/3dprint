@@ -12,5 +12,5 @@ Files are available in various formats.
 | --------- | ------------------------------------------------------------- | 
 | stl       | The raw model. Will need to be added to a slicer              |
 | 3mf       | A slicer project file. Uses settings suitable for an Ender 3  |
-| f3z       | An Autodesk Fusion file. So you can edit the designs yourself |
+| f3d       | An Autodesk Fusion file. So you can edit the designs yourself |
 
