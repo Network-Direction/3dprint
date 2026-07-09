@@ -185,12 +185,17 @@ To support this, the slicer needs:
 * Label Objects:    Enabled
 * Exclude Objects:  Enabled
 
+</br></br>
 **Arguments:**
 
 `C`           Cancel the current object
+
 `P<index>`    Cancel an object with a given index
+
 `S<index>`    Set the index of the current object
+
 `T<count>`    Reset state and set the number of objects
+
 `U<index>`    Un-cancel object with the given index
 
 
