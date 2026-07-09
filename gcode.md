@@ -177,6 +177,25 @@ Sets the preferred acceleration of the hotend.
 
 
 </br></br>
+#### Cancel Objects - M486
+
+Used to cancel specific items on the print bed. When printing multiple items at once, you may want to cancel one of them without cancelling the entire print job. This command can do this.
+
+To support this, the slicer needs:
+* Label Objects:    Enabled
+* Exclude Objects:  Enabled
+
+**Arguments:**
+
+`C`           Cancel the current object
+`P<index>`    Cancel an object with a given index
+`S<index>`    Set the index of the current object
+`T<count>`    Reset state and set the number of objects
+`U<index>`    Un-cancel object with the given index
+
+
+
+</br></br>
 ### Ignored Commands
 
 The slicer will create a gcode file which is sent to the printer for processing.
