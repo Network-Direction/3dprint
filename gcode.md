@@ -58,13 +58,23 @@ These are linear movement commands. It tells the print head where to go, using X
 
 `G0` is a _rapid move_, while `G1` is a _controlled move_. In modern 3d printing, they functionally the same thing.
 
+</br></br>
 **Arguments:**
 
-Takes a `X`, `Y`, and `Z` coordinate positions. Not all three are required, only the ones that will change.
+| Argument | Description                            |
+| -------- | -------------------------------------- |
+| `X`      | The X coordinate posistion             |
+| `Y`      | The Y coordinate posistion             |
+| `Z`      | The Z coordinate posistion             |
+| `F`      | Speed of the print head move in mm/min |
+| `E`      | The amount of filament to extrude      |
 
-The `F` argument controls the speed of the print head move, in mm/min.
+</br></br>
+Not all coordinates are needed, only the ones that are changing.
 
-The `E` argument is how much filament to extrude during the move. Technically, this is only meant to be used with `G1`.
+
+</br></br>
+**Example**
 
 ```gcode
 G1 X100 Y50 Z0.2 F1500 E5    ; Move to 100,50,0.2 at a rate of 1500mm/min, and extrude 5mm of filament
@@ -83,11 +93,16 @@ G1 E-1.0 F2100                ; Retracts 1mm of filament
 
 Pauses the command queue, and waits for a period of time. With no arguments, this is the same as `M400`, which causes g-code processing to pause until all other commands are complete (eg, waits for heating or cooling)
 
+</br></br>
 **Arguments:**
 
-The `S` argument is the number of ms to dwell.
+| Argument | Description                            |
+| -------- | -------------------------------------- |
+| `S`      | Number of milliseconds to dwell        |
+| `P`      | Number of seconds to dwell             |
 
-The `P` argument is the number of seconds to dwell. If `S` is also included, `S` will take precedence.
+</br></br>
+If both arguments are supplied, `S` will take precedence.
 
 
 
@@ -105,6 +120,9 @@ Often this needs to be done before other operations can be started.
 `G90` sets absolute positioning mode. This means the printer will move exactly to the given coordinates. It will not move relative to its current position.
 
 `G92` tells the printer to rename the current position as _zero_. This is like telling the printer where to start from.
+
+</br></br>
+**Example**
 
 ```gcode
 G92 E0    ; Reset the extruder's position reference, and extrude nothing
@@ -143,9 +161,15 @@ Both of these will set the nozzle temperature.
 
 `M109` requires the hot end to heat up to the given temperature before the printer moves on to the next command.
 
+</br></br>
 **Arguments:**
 
-Takes an `S` code with the temperature. For example:
+| Argument | Description                            |
+| -------- | -------------------------------------- |
+| `S`      | The temperature to set                 |
+
+</br></br>
+**Example**
 
 ```gcode
 M104 S220
@@ -161,9 +185,15 @@ Both set the bed temperature.
 
 `M190` requires the bed to heat up to the given temperature before the printer moves on to the next command.
 
+</br></br>
 **Arguments:**
 
-Takes an `S` code with the temperature. For example:
+| Argument | Description                            |
+| -------- | -------------------------------------- |
+| `S`      | The temperature to set                 |
+
+</br></br>
+**Example**
 
 ```gcode
 M104 S220
@@ -188,15 +218,13 @@ To support this, the slicer needs:
 </br></br>
 **Arguments:**
 
-`C`           Cancel the current object
-
-`P<index>`    Cancel an object with a given index
-
-`S<index>`    Set the index of the current object
-
-`T<count>`    Reset state and set the number of objects
-
-`U<index>`    Un-cancel object with the given index
+| Argument   | Description                               |
+| ---------- | ----------------------------------------- |
+| `C`        | Cancel the current object                 |
+| `P<index>` | Cancel an object with a given index       |
+| `S<index>` | Set the index of the current object       |
+| `T<index>` | Reset state and set the number of objects |
+| `U<index>` | Un-cancel object with the given index     |
 
 
 
