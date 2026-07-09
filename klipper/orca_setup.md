@@ -55,7 +55,8 @@ The connection between the slicer and printer will use the Moonraker API. This m
 
 <img width="452" height="312" alt="image" src="https://github.com/user-attachments/assets/f1b354f2-1c13-46a4-88ae-b4add69c77d6" />
 
-
+</br></br>
+If this is all working, when you go to the **Device** tab, you should immediately get access to Mainsail.
 
 
 </br></br>
@@ -95,8 +96,37 @@ The two settings we want to adjust are _Machine start G-code_ and _Machine end G
 There should be a bunch of g-code already there.
 
 
+</br></br>
+There are already some macros in Klipper we can use instead of these. Check out the **macros** section if you're not sure what I'm talking about.
+
+For **Machine start G-code**, use:
+
+```gcode
+G90
+M83
+M140 S0
+M104 S0
+M204 P[machine_max_acceleration_extruding] T[machine_max_acceleration_retracting]
+PRINT_START EXTRUDER=[first_layer_temperature] BED=[first_layer_bed_temperature]
+```
+
+</br></br>
+This will:
+1. Set absolute positioning
+2. Set relative extrusion
+3. Reset extruder and bed temperature
+4. Sets the max acceleration and retraction the printer is capable of
+5. Call the `PRINT_START` macro, passing the extruder and bed temperatures to start with
 
 
 
+</br></br>
+For **Machine end G-code**, use:
 
+```gcode
+PRINT_END
+```
+
+</br></br>
+This simply calls the `PRINT_END` macro.
 
