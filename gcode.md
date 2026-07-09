@@ -121,6 +121,12 @@ Some of these commands need to complete before moving to the next command. Other
 
 
 </br></br>
+#### Disable Motors - M84
+
+Turns the motors off, typically when a print job has been completed.
+
+
+</br></br>
 #### Nozzle Temperature - M104 and M109
 
 Both of these will set the nozzle temperature.
