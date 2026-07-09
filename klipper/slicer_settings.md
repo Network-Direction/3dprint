@@ -7,6 +7,30 @@ These can apply to any slicer, but I've been using Orca.
 
 </br></br>
 ---
+## Filament Settings
+
+Filament settings will vary depending on the filament you use (duh).
+
+However, I recommend disabling **pressure advance**, as this is better managed in Klipper.
+
+
+</br></br>
+If you're interested, here are some settings I used for Sunlu Matte PLA:
+
+| Area     | Category                      | Setting                       | Value    |
+| -------- | ----------------------------- | ----------------------------- | -------- |
+| Filament | Basic Information             | Recommended nozzle temp (min) | 205°     |
+| Filament | Basic Information             | Recommended nozzle temp (max) | 245°     |
+| Filament | Flow Ratio & Pressure Advance | Flow ratio                    | 0.95     |
+| Filament | Flow Ratio & Pressure Advance | Pressure Advance              | Disabled |
+| Filament | Print Temperature             | First Layer                   | 220°     |
+| Filament | Print Temperature             | Other Layers                  | 220°     |
+| Filament | Bed Temperature               | First Layer                   | 60°      |
+| Filament | Bed Temperature               | Other Layers                  | 60°      |
+
+
+</br></br>
+---
 ## Process Settings
 
 These are in the slicer, over on the left, under the _Printer_ and _Filment_ settings.
