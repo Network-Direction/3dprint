@@ -121,6 +121,14 @@ Some of these commands need to complete before moving to the next command. Other
 
 
 </br></br>
+#### Relative Mode - M83
+
+Sets the extruder to _relative_ mode. The extruder is also known as the **E-Axis**.
+
+This means each extrusion commands will just extrude the amount of filament they're told to in the instruction, not work on a cumulative total.
+
+
+</br></br>
 #### Disable Motors - M84
 
 Turns the motors off, typically when a print job has been completed.
