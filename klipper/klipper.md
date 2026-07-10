@@ -245,6 +245,13 @@ A Simple way to test it is working is to click the home button in the 'Toolhead'
 
 
 </br></br>
+> [!NOTE]
+> Now you're running Klipper, you don't need the SD Card for regular operation.
+>
+> However, you might need it in future if you need to flash the firmware again.
+
+
+</br></br>
 ---
 ## Next Steps
 
