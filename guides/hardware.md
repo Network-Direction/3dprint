@@ -40,36 +40,43 @@ The Ender 3 has a total of four fans:
 
 
 </br></br>
-### Extruder Fans
-
-The hot end fan and part cooling fan are both in the extruder. These are the ones that get noisy when a print starts.
-
-Both are 24v, and connect with 1.25mm JST headers. These are 2-pin headers, so no PWM is used to control fan speed.
-
-The hot end fan is a 4010 axial fan (40x40x10), while the part cooling fan is a 4010 blower/radial fan.
-
-
-</br></br>
 > [!WARNING]
 > The Ender uses 24v for fans. Make sure any replacement is 24v as well.
 >
 > Alternatively, use a 12v fan (quieter) with a _buck converter_ to convert the 24v to 12v.
 
 
-</br></br>
-These can be upgraded to larger and quieter fans. The stock fans are 40x40x10mm, while some 24v replacements are 40x40x20mm.
-
-This typically means printing a new hotend shroud to house the new fans.
 
 </br></br>
-> [!WARNING]
-> Due to the heat produced, this should be printed in PETG, not PLA.
+### Hot End Cooling Fan
+
+This fan is in the extruder, and turns on when printing starts.
+
+It is a 24v 4010 axial fan (40x40x10mm), with 2-pin 1.35mm JST header. 2-pin means there's no PWM, so no control over fan speed. It is on or off.
 
 
 </br></br>
 Good options seem to include:
 * Noctua NF-A4x10 FLX (12v, requires buck converter)
 * Sunon 4020
+
+
+</br></br>
+### Part Cooling Fan
+
+This is also housed in the extruder. This is PWM controlled, so the printer can control the fan speed.
+
+This is a 24v blower/radial fan, with 1.25mm JST headers. This is still a 2-pin connector. The motherboard uses PWM to control the speed.
+
+Because of the PWM control, any replacement should also be 24v, not 12v with a buck converter.
+
+Typically a new fan shroud would be needed.
+
+
+</br></br>
+> [!WARNING]
+> Due to the heat produced, this should be printed in PETG, not PLA.
+
 
 
 
