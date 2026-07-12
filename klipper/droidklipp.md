@@ -79,13 +79,89 @@ Transfer this to your device, and install it as normal.
 </br></br>
 ### Raspberry Pi Setup
 
+To setup the Raspberry Pi, you will need to [run KIUAH](klipper.md) again. Make sure there's no print job running while installing apps.
+
+1. Install KlipperScreen
+  1. Use 'standalone mode'
+  2. Use **X11** as the server (**Wayland** is not supported yet)
+  3. Do not install **Network Manager**
+
+2. Install DroidKlipp
+  1. Get this from the _extensions_ area
+  2. When asked, skip configuring a manual IP
 
 
 </br></br>
 ### Connection and Customization
 
+Connect the phone:
+
+1. Launch the DroidKlipp app on the phone
+2. Follow the prompts to set the screen resolution, etc
+3. Connect the phone to the RPi with a USB cable
+4. Confirm that you have access to the printer
 
 
+</br></br>
+Customization is optional. The default settings work just fine.
+
+However, to customise, follow this process:
+
+1. Restart the KlipperScreen service (use the 'power button' in mainsail)
+2. Confirm that a `KlipperScreen.conf` file has been created (it will be empty)
+3. Refer to [the documentation](https://klipperscreen.readthedocs.io/en/latest/Configuration/) to see configuratble settings
+
+
+</br></br>
+Sample configuration:
+
+```ini
+# ===============================================
+# Interface settings
+# ===============================================
+
+[main]
+# Interface theme
+# Options: default, material-dark, colorized, voron-dark
+# voron-dark hides some icons and menu items
+# default, material-dark, and colorized are very similar
+theme = colorized
+
+# Job status timeout after a job (0 is disabled)
+job_complete_timeout: 0
+job_error_timeout: 0
+
+# Autolock screen (0 is disabled)
+autolock_timeout: 0
+start_locked: False
+
+
+[printer Ender]
+# Information displayed in the titlebar
+# Options: full, short, None
+titlebar_name_type: full
+
+# Items in the titlebar, in addition to extruder and bed temp
+titlebar_items: None
+
+
+# ===============================================
+# Extra menu items
+# ===============================================
+
+[menu __main homing]
+name: Home
+icon: home
+method: printer.gcode.script
+params: {"script":"G28"}
+
+
+#~# --- Do not edit below this line. This section is auto generated --- #~#
+#~#
+#~# [main]
+#~# theme = colorized
+#~#
+```
 
 
 
