@@ -46,6 +46,9 @@ The hot end fan and part cooling fan are both in the extruder. These are the one
 
 Both are 24v, and connect with 1.25mm JST headers. These are 2-pin headers, so no PWM is used to control fan speed.
 
+The hot end fan is a 4010 axial fan (40x40x10), while the part cooling fan is a 4010 blower/radial fan.
+
+
 </br></br>
 > [!WARNING]
 > The Ender uses 24v for fans. Make sure any replacement is 24v as well.
@@ -54,7 +57,7 @@ Both are 24v, and connect with 1.25mm JST headers. These are 2-pin headers, so n
 
 
 </br></br>
-These can be upgraded to larger and quieter fans. The stock fans are 40x40x10mm, while many 24v replacements are 40x40x20mm.
+These can be upgraded to larger and quieter fans. The stock fans are 40x40x10mm, while some 24v replacements are 40x40x20mm.
 
 This typically means printing a new hotend shroud to house the new fans.
 
@@ -65,7 +68,7 @@ This typically means printing a new hotend shroud to house the new fans.
 
 </br></br>
 Good options seem to include:
-* Noctua NF-A4x10 FLX
+* Noctua NF-A4x10 FLX (12v, requires buck converter)
 * Sunon 4020
 
 
