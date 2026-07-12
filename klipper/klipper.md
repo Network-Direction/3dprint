@@ -227,9 +227,9 @@ You may need to click **Restart Firmware** to get it to recognise the printer.
 
 </br></br>
 > [!NOTE]
-> I found that some USB cables wouldn't work. Some may be for chargins devices only.
+> I found that some USB cables wouldn't work. Some may be for charging devices only.
 > 
-> If you have troubles, try changing cables.
+> If you have troubles, try changing cables. I have found that USB-C to USB-C cables are best. Try using a USB-A to USB-C converter on the RPi end.
 > 
 > Also see [USB Troubleshooting](usb_tshoot.md)
 
