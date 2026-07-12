@@ -21,6 +21,7 @@ This is set in the filament profile in the slicer, so the slicer knows what nozz
 
 A value of zero means this will not be checked.
 
+</br></br>
 > [!NOTE]
 > Changing this setting will not improve performance or quality. It simply enables your slicer to warn you if needed.
 
@@ -48,6 +49,7 @@ A measurement in grams-per-cubic-centermeter of how dense the material is.
 
 This value is used to estimate how much of the material is needed for a particular print. This is how the estimated weight and cost of the print are calculated.
 
+</br></br>
 > [!NOTE]
 > Adjusting this does not improve performance or quality.
 
@@ -74,6 +76,7 @@ This is set in two ways, based on the coordinates:
 * Shrinkage (XY)
 * Shrinkage (Z)
 
+</br></br>
 > [!NOTE]
 > This setting helps improve tolerance.
 
