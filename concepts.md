@@ -1,6 +1,8 @@
 # General 3D Printing Concepts
 
-## Nozzle HRC
+## Hardware
+
+### Nozzle HRC
 
 HRC is the Rockwell Hardness Scale. This measures the hardness of metal materials.
 
@@ -30,7 +32,9 @@ A value of zero means this will not be checked.
 
 </br></br>
 ---
-## Adhesiveness Category
+## Filament
+
+### Adhesiveness Category
 
 Defines how strongly different materials will bond with each other.
 
