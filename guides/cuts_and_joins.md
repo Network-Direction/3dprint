@@ -37,6 +37,79 @@ The problem is, printer tolerances mean that we can't just print up some joints.
 
 ### Planar
 
+A planar cut is a straight cut down an object.
+
+</br></br>
+<img width="390" height="358" alt="image" src="https://github.com/user-attachments/assets/343e4f6c-bc76-40de-a25b-a2f157ed6d34" />
+
+
+</br></br>
+If you just want to cut an object up, just use this cut and adjust it's position.
+
+If you want to join the objects you're cutting, you can click **add connectors**.
+
+</br></br>
+<img width="290" height="147" alt="image" src="https://github.com/user-attachments/assets/a044c41f-dbf4-4655-91eb-e6389f91c059" />
+
+</br></br>
+There are three types of connectors:
+* Plug
+* Dowel
+* Snap
+
+</br></br>
+<img width="335" height="130" alt="image" src="https://github.com/user-attachments/assets/d9de51c0-4b1e-45d0-a507-fe248b492aec" />
+
+</br></br>
+While in this mode, you will see the cross section of your object. Click on that cross section to add connectors.
+
+</br></br>
+<img width="807" height="311" alt="image" src="https://github.com/user-attachments/assets/3d16bc5c-2f03-4ae6-8e3b-916cf10d54b3" />
+
+
+</br></br>
+#### Plug Connectors
+
+The plug connector is a simple part extruding from one side of the cut. The other side of the cut will have a corresponding hole for the plug to be inserted into.
+
+There are two styles available:
+* **Prism** - A simple cylinder (shown on the right in the image below)
+* **Frustrum** - A tapered cylinger (shown on the left)
+
+</br></br>
+<img width="239" height="214" alt="image" src="https://github.com/user-attachments/assets/8e03b7dc-62c5-45f4-8fde-dfa3c92be8be" />
+
+
+</br></br>
+There are four shapes for plugs:
+* Circle
+* Hexagon
+* Square
+* Triangle
+
+</br></br>
+<img width="460" height="280" alt="image" src="https://github.com/user-attachments/assets/5a48841b-f7da-4659-9163-1767f0af1780" />
+
+</br></br>
+All these shapes support both _prism_ and _frustrum_ types.
+
+
+</br></br>
+> [!TIP]
+> Adding connectors will leave holes on one side of the cut. This will likely need supports when printing.
+>
+> Use the [support trick](supports.md) to make supports easier to remove from the holes.
+
+
+
+</br></br>
+#### Dowel Connectors
+
+
+
+</br></br>
+#### Snap Connectors
+
 
 
 </br></br>
