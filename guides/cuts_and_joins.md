@@ -105,6 +105,19 @@ All these shapes support both _prism_ and _frustrum_ types.
 </br></br>
 #### Dowel Connectors
 
+A dowel connector is very similar to a plug. The difference is, both sides of the cut object have a hole. A _dowel_ piece is created as a separate object.
+
+</br></br>
+<img width="467" height="438" alt="image" src="https://github.com/user-attachments/assets/c2dddb43-4779-4839-95e9-68be0b2ca114" />
+
+</br></br>
+_Prism_ is the only type available for a dowel connector.
+
+All four shapes (circle, hexagon, square, and triangle) are supported for dowels.
+
+</br></br>
+<img width="323" height="127" alt="image" src="https://github.com/user-attachments/assets/3e59e1e9-0ef9-47a2-8552-6c20a241a296" />
+
 
 
 </br></br>
@@ -113,6 +126,7 @@ All these shapes support both _prism_ and _frustrum_ types.
 
 
 </br></br>
+---
 ### Dovetail
 
 The dovetail will cut the model, and leave a _dovetail_ joint, just like you [might see in woodworking](https://en.wikipedia.org/wiki/Dovetail_joint).
