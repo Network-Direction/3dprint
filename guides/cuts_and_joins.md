@@ -123,6 +123,20 @@ All four shapes (circle, hexagon, square, and triangle) are supported for dowels
 </br></br>
 #### Snap Connectors
 
+Snap connectors create something that looks like a plug, but it tapered in the middle (called the _bulge_), and has a split down the centre.
+
+These are meant to create a snap fit between the two parts. This requires the material to have a bit of flexibility, so it may not be suitable in all cases.
+
+</br></br>
+<img width="220" height="202" alt="image" src="https://github.com/user-attachments/assets/2e6bfaed-787a-4583-bc5e-1f878ad5bb36" />
+
+</br></br>
+The type and shape are fixed for the snap connector. However, it does come with a lot of configurable settings.
+
+</br></br>
+<img width="380" height="294" alt="image" src="https://github.com/user-attachments/assets/dcffdb50-8d18-4b5b-8778-cc91f26db66a" />
+
+
 
 
 </br></br>
