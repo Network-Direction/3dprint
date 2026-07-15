@@ -1,4 +1,4 @@
-# Ironing
+# Ironing and Top Surface Quality
 
 ## Overview
 
@@ -30,6 +30,15 @@ Some good starting values are:
 To find to optimal values, use a [top surface ironing test](https://www.printables.com/model/1247198-top-surface-ironing-test/files).
 
 This will print at different speeds and fill rates. From there, just decide which settings are best for your printer and filament.
+
+
+</br></br>
+> [!TIP]
+> To further tune your top surface, try reducing the _line width_ by about 0.04mm.
+>
+> The default is 0.40mm, so try 0.36mm.
+>
+> Find this setting in Quality > Line width.
 
 
 
