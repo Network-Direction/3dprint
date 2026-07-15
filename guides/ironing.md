@@ -12,7 +12,7 @@ Ironing is set in Process > Quality > Ironing.
 
 
 </br></br>
-Some good values are:
+Some good starting values are:
 
 | Setting              | Value                                    |
 | -------------------- | ---------------------------------------- |
@@ -23,6 +23,13 @@ Some good values are:
 | Ironing inset        | 0.21mm                                   |
 | Ironing angle offset | 45° or 90°                               |
 | Ironing Speed        | 50mm/s                                   |
+
+
+
+</br></br>
+To find to optimal values, use a [top surface ironing test](https://www.printables.com/model/1247198-top-surface-ironing-test/files).
+
+This will print at different speeds and fill rates. From there, just decide which settings are best for your printer and filament.
 
 
 
