@@ -18,11 +18,11 @@ Some good values are:
 | -------------------- | ---------------------------------------- |
 | Ironing Type         | All top surfaces or Topmost surface only |
 | Pattern              | _up to your preference_                  |
-| Ironing Flow         | 20%                                      |
+| Ironing Flow         | 10%                                      |
 | Ironing line spacing | 0.15mm (75% of the nozzle diameter)      |
 | Ironing inset        | 0.21mm                                   |
 | Ironing angle offset | 45° or 90°                               |
-| Ironing Speed        | 40mm/s                                   |
+| Ironing Speed        | 50mm/s                                   |
 
 
 
