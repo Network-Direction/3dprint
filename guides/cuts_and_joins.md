@@ -64,6 +64,11 @@ For larger dovetails:
 
 
 </br></br>
+<img width="383" height="164" alt="image" src="https://github.com/user-attachments/assets/e6fe8972-3e7f-4e5f-9324-763186a4a002" />
+
+
+
+</br></br>
 For smaller dovetails:
 
 | Setting         | Value  |
@@ -76,11 +81,36 @@ For smaller dovetails:
 | Groove Angle    | 0°     |
 
 
+</br></br>
+<img width="384" height="169" alt="image" src="https://github.com/user-attachments/assets/8411c144-2701-4b30-8001-fe7e6eb027f4" />
+
+
+</br></br>
+These settings will create a tight fit that will generally mean you won't need glue.
+
+For a looser fit, increase the width tolerance a little.
+
 
 
 </br></br>
 ---
 ## Tuning
+
+Once you perform a cut, that creates two objects. The way the object is cut then becomes part of those objects.
+
+What I'm trying to say is, you can't edit cuts after they're done. This makes tuning these settings a bit of a pain.
+
+</br></br>
+The best option is to start a new project in orca, right click the plate, and add a primitive. A cube will do.
+
+Then, make sure all your other settings are typical of a normal print. That is, number of walls, filament type, speed, etc.
+
+</br></br>
+Now, cut this object using the settings above. That is, a planar cut with connectors, or a dovetail cut. Slice the objects, print them, and see how they go.
+
+From there, adjust the tolerances to make the fit tighter or looser as needed.
+
+
 
 
 
