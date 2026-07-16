@@ -11,6 +11,50 @@ Macros are a script of g-code to run common commands. For example:
 
 </br></br>
 ---
+## Calling Macros from Orca
+
+Macros can be called automatically by referring to them in the gcode. This means the slicer needs to be aware of the macros so it can embed these commands.
+
+In Orca slicer, edit the printer settings, and go to the **Machine G-code** tab.
+
+This contains an area when you can add custom G-code at various points of the print. The two most useful ones are:
+* Machine start G-code
+* Machine end G-code
+
+</br></br>
+These areas run specific commands every time a job starts and ends.
+
+In **Machine start G-code**, replace anything that's already there with:
+
+```gcode
+SET_PRINT_STATS_INFO TOTAL_LAYER_COUNT=[total_layer_count]
+START_PRINT BED_TEMP=[first_layer_bed_temperature] EXTRUDER_TEMP=[first_layer_temperature]
+```
+
+</br></br>
+This adds some useful information to the gcode file about the print, such as the total layer count.
+
+The second line is the important one. This calls the [`START_PRINT`](print_start.cmd) macro, and passes the bed and extruder temperature.
+
+> [!WARNING]
+> Make sure these macros exist in mainsail if you're going to use them.
+
+
+</br></br>
+In **Machine end G-code**, replace anything that's already there with:
+
+```gcode
+END_PRINT
+```
+
+</br></br>
+This simply calls the [`END_PRINT`](print_end.cmd) macro at the end of a print job.
+
+
+
+
+</br></br>
+---
 ## Macro File
 
 Macros can be placed directly in `printer.cfg`, but it is recommended to put them in a separate file, `macros.cfg`.
