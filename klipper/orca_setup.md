@@ -87,46 +87,6 @@ Still in the _Basic Information_ tab, under the _Advanced_ area, set **G-code fl
 </br></br>
 **Machine G-code**
 
-Go to the _Machine G-code_ tab.
+Refer to [the macros](../macros/README.md) section for information on setting start and end macros.
 
-This is where we can configure the slicer to add additional g-code at certain times during the print.
-
-The two settings we want to adjust are _Machine start G-code_ and _Machine end G-code_. This is code that runs before a print starts, and after a print ends.
-
-There should be a bunch of g-code already there.
-
-
-</br></br>
-There are already some macros in Klipper we can use instead of these. Check out the **macros** section if you're not sure what I'm talking about.
-
-For **Machine start G-code**, use:
-
-```gcode
-G90
-M83
-M140 S0
-M104 S0
-M204 P[machine_max_acceleration_extruding] T[machine_max_acceleration_retracting]
-PRINT_START EXTRUDER=[first_layer_temperature] BED=[first_layer_bed_temperature]
-```
-
-</br></br>
-This will:
-1. Set absolute positioning
-2. Set relative extrusion
-3. Reset extruder and bed temperature
-4. Sets the max acceleration and retraction the printer is capable of
-5. Call the `PRINT_START` macro, passing the extruder and bed temperatures to start with
-
-
-
-</br></br>
-For **Machine end G-code**, use:
-
-```gcode
-PRINT_END
-```
-
-</br></br>
-This simply calls the `PRINT_END` macro.
 
