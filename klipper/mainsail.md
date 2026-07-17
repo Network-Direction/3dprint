@@ -2,7 +2,7 @@
 
 ## Macros
 
-There are several [macros](../macros.README.md) which are included by default, and of course, we can add our own. These show up in a widget on the dashboard:
+There are several [macros](../macros.README.md) which are included by default, and of course, we can add our own. These show up in a panel on the dashboard:
 
 <img width="420" height="342" alt="image" src="https://github.com/user-attachments/assets/64da4451-bacd-42f3-ad9f-6bbfcc66aa09" />
 
@@ -40,9 +40,29 @@ Repeat this to create more groups as you need to.
 
 </br></br>
 ---
+## Presets
+
+At the top of the **Temperatures** panel you will see _Cooldown_. This is a preset, and the only one that's there by default.
+
+<img width="588" height="63" alt="image" src="https://github.com/user-attachments/assets/792e01c5-4a6e-446f-a8f0-e469a071907c" />
+
+
+</br></br>
+Let's add another one. Go to **Interface Settings**, then to the **Presets** tab.
+
+If you edit the existing _Cooldown_ macro, you will see that it contains `TURN_OFF_HEATERS` as custom G-Code. You can tune this if you want to.
+
+Let's add a new preset called **Preheat**. For this, I will set the _Extruder_ to 220, and the _Heater Bed_ to 60.
+
+The _Temperatures_ dashboard now has a drop-down called **Presets**, which contains the _cooldown_ and _preheat_ presets.
+
+
+
+</br></br>
+---
 ## Toolhead Position
 
-The toolhead widget in the dashboard lets us control the position of the toolhead, both while the printer is idle, and while it is printing.
+The toolhead panel in the dashboard lets us control the position of the toolhead, both while the printer is idle, and while it is printing.
 
 
 </br></br>
@@ -58,7 +78,7 @@ The three bars following that lets us move the print head to different locations
 </br></br>
 ### Print in Progress
 
-Here is the toolhead widget while printing is in progress:
+Here is the toolhead panel while printing is in progress:
 
 <img width="400" height="521" alt="image" src="https://github.com/user-attachments/assets/2637c69d-cba2-47fb-9f7a-466a4de75177" />
 
@@ -67,7 +87,7 @@ We can finetune the Z-Offset while printing here, to test different heights in r
 
 We've also got the option to slow down or speed up the print using the speed factor setting.
 
-The top of the widget shows some information about current settings. The `position` is set to `absolute`. This will have been set using a `G90` code within the gcode file or in a start print macro.
+The top of the panel shows some information about current settings. The `position` is set to `absolute`. This will have been set using a `G90` code within the gcode file or in a start print macro.
 
 The `adaptive-` part shows the bed mesh profile that was loaded. In this case, it was set dynamically as part of the print job.
 
@@ -77,7 +97,7 @@ The `adaptive-` part shows the bed mesh profile that was loaded. In this case, i
 
 To customize, click the gears in the top right of mainsail to get the _Interface Settings_ window. Then go to _Control_.
 
-Optionally change the style of the widget:
+Optionally change the style of the panel:
 
 <img width="678" height="146" alt="image" src="https://github.com/user-attachments/assets/9d6451de-f82d-46fb-b920-0637ddeb0ee0" />
 
