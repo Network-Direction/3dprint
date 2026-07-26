@@ -45,7 +45,7 @@ Calibration order:
 4. Retraction
 5. Cornering
 6. VFA
-7. Tolerance
+7. [Tolerance](tolerance.md)
 
 </br></br>
 > [!NOTE]
@@ -124,21 +124,6 @@ VFA (Vertical Fine Artifacts) are surface imperfections on walls. These are ofte
 This calibration aims to determine print speeds that trigger these artifacts.
 
 Follow the guide here: [https://www.orcaslicer.com/wiki/calibration/vfa_calib]
-
-
-</br></br>
----
-### Tolerance
-
-This refers to how accurate the print jobs are. This is especially important if you are cutting and joining large parts, or are using nuts, bolts, screws, etc, in your prints.
-
-Some tolerance is based around the quality of the printer, which can't really be changes.
-
-Other tolerance issues happen when filament shrinks when cooling.
-
-This calibration aims to determine how much shrinkage occurs, and compensates by scaling some area of the print up.
-
-Follow the guide here: [https://www.orcaslicer.com/wiki/calibration/tolerance_calib]
 
 
 
