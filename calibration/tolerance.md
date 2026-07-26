@@ -32,12 +32,56 @@ In this example, the **XY** would be set to 96%, and the **Z** would be set to 9
 
 </br></br>
 ---
-## X-Y Hole Compensation
+## Hole and Contour
+
+The _hole_ is any part that is cut out of a print. The _countour_ is the edge around the outside of the print.
+
+This is shown well on [Bambu Labs Wiki](https://wiki.bambulab.com/en/software/bambu-studio/xy-hole-contour-compensation):
+
+</br></br>
+<img width="472" height="369" alt="image" src="https://github.com/user-attachments/assets/b1ee6a12-af2f-482d-b12f-9e77c211cae6" />
+
+
+</br></br>
+These settings are tuned in the slicer.
+
+Process Settings > Quality (tab) > Precision.
 
 
 </br></br>
 ---
-## X-Y Contour Compensation
+### X-Y Hole Compensation
+
+To calibrate this, start a new project in Orca Slicer. Right click on the build plate, and go to _handy models_. Then add **Orca Tolerance Test**.
+
+</br></br>
+<img width="426" height="175" alt="image" src="https://github.com/user-attachments/assets/e0ab8b63-dbc6-4951-9336-b60cebbd5cd0" />
+
+</br></br>
+<img width="612" height="235" alt="image" src="https://github.com/user-attachments/assets/9193c3ec-8af2-4059-87dc-5515d8d2cd8d" />
+
+</br></br>
+Now print the model. If the tolerance is good, the hexagonal insert should very easily slide out of the **0.4** hole, and it should fit snugly into the **0** hole.
+
+Also, a **6mm** allan key should fit into the '0' hole.
+
+</br></br>
+If this does not happen, the tolerance is off.
+
+If, for example, the allan key fits nicely into the **0.1** hole, then the tolerance is off by about 0.1mm.
+
+Adjust the **X-Y Hole Compensation** setting in the slicer to **0.1**
+
+</br></br>
+Now repeat the process. You may need to adjust to smaller values to get it just right.
+
+I found that **0.12** was a good value on my Ender 3, using PLA.
+
+
+
+</br></br>
+---
+### X-Y Contour Compensation
 
 
 
