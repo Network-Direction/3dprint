@@ -83,5 +83,31 @@ I found that **0.12** was a good value on my Ender 3, using PLA.
 ---
 ### X-Y Contour Compensation
 
+This calibration involved printing a known sized object, and measuring the result.
+
+I used the basic process in [Bambu Labs Wiki](https://wiki.bambulab.com/en/software/bambu-studio/xy-hole-contour-compensation).
+
+</br></br>
+Download the [XY Contour Calibration without Calipers](https://makerworld.com/en/models/2172676-xy-contour-calibration-without-calipers#profileId-2356707) model from Maker World.
+
+Even though it says you can do this without calipers, using calipers is better.
+
+</br></br>
+Add the STL to Orca Slicer. There's a lot more here than we need, so I recommend slicing a bunch of material off the top, leaving about 15-20 layers.
+
+The result is a 55mm disc.
+
+</br></br>
+Print the model, and wait for it to completely cool down. Then measure its width. It should come out to 55mm.
+
+If not, it's time to tune our settings.
+
+Subtract the result you got from 55mm. In my case, it was 54.6mm, so I was left with 0.4mm. Now halve that value. So, 0.2 in my case.
+
+Now go to the Contour Compensation section, and add this value in.
+
+</br></br>
+<img width="360" height="69" alt="image" src="https://github.com/user-attachments/assets/72bc035e-a080-4b12-95c3-f0683a459ed9" />
+
 
 
