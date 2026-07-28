@@ -59,7 +59,10 @@ This is to calibrate the temperature of the nozzle, which affects the viscosity 
 
 This calibration affects quality, bed adhesion, extrustion levels, and stringing.
 
-Follow the guide here: [https://www.orcaslicer.com/wiki/calibration/temp_calib]
+</br></br>
+Calibration > Temperature
+
+Follow the guide here: [Temp Calibration](https://www.orcaslicer.com/wiki/calibration/temp_calib)
 
 
 </br></br>
@@ -70,7 +73,10 @@ This is the maximum amount of filament that can be melted and extruded per secon
 
 This represents a physical limit of the hardware and filament. The max volumentric speed is a value we provide that the printer will not exceed.
 
-Follow the guide here: [https://www.orcaslicer.com/wiki/calibration/volumetric_speed_calib]
+</br></br>
+Calibration > Max Flow Rate
+
+Follow the guide here: [Max Volumetric Speed (FlowRate)](https://www.orcaslicer.com/wiki/calibration/volumetric_speed_calib)
 
 
 </br></br>
@@ -79,12 +85,16 @@ Follow the guide here: [https://www.orcaslicer.com/wiki/calibration/volumetric_s
 
 This determines how much filament is extruded. This setting affects print Quality.
 
+</br></br>
 > [!NOTE]
 > There are two ways this calibration can be performed. One is a 2-Pass method, and the other is called YOLO.
 >
 > The 2-Pass method is considered legacy. Use the 'YOLO (Recommended' method.
 
-Follow the guide here: [https://www.orcaslicer.com/wiki/calibration/flow_ratio_calib]
+</br></br>
+Calibration > Flow Ratio > YOLO
+
+Follow the guide here: [Flow Ratio Calibration](https://www.orcaslicer.com/wiki/calibration/flow_ratio_calib)
 
 
 </br></br>
@@ -97,7 +107,11 @@ The point of this is to prevent small extrusions (stringing) during non-extrudin
 
 This calibration affects print quality (stringing).
 
-Follow the guide here: [https://www.orcaslicer.com/wiki/calibration/retraction_calib]
+</br></br>
+
+Calibration > Retraction
+
+Follow the guide here: [Retraction test](https://www.orcaslicer.com/wiki/calibration/retraction_calib)
 
 
 </br></br>
@@ -108,7 +122,10 @@ Cornering is how well the printer handles changes in direction during moves.
 
 This calibration affects quality and accuracy of the prints. This reduces ringing, ghosting, and overshooting.
 
-Follow the guide here: [https://www.orcaslicer.com/wiki/calibration/cornering_calib]
+</br></br>
+Calibration > Cornering
+
+Follow the guide here: [Cornering](https://www.orcaslicer.com/wiki/calibration/cornering_calib)
 
 </br></br>
 > [!NOTE]
@@ -123,7 +140,10 @@ VFA (Vertical Fine Artifacts) are surface imperfections on walls. These are ofte
 
 This calibration aims to determine print speeds that trigger these artifacts.
 
-Follow the guide here: [https://www.orcaslicer.com/wiki/calibration/vfa_calib]
+</br></br>
+Calibration > VFA
+
+Follow the guide here: [VFA](https://www.orcaslicer.com/wiki/calibration/vfa_calib)
 
 
 
