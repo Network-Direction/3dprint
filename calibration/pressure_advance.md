@@ -13,13 +13,13 @@ Settings may vary for different filaments.
 
 Get the square tower print, and add it to the slicer. Either use the 3mf file in the repository, or the stl file here: [https://www.klipper3d.org/prints/square_tower.stl]
 
-| Setting              | Value          |
-| -------------------- | -------------- |
-| Speed                | 100mm/s        |
-| Infill               | 0              |
-| Layer height         | Coarse (0.3mm) |
-| Dynamic acceleration | Disabled       |
-| Scarf joint seams    | Disabled       |
+| Tab      | Setting              | Value          |
+| -------- | -------------------- | -------------- |
+| Quality  | Layer height         | Coarse (0.3mm) |
+| Quality  | Scarf joint seams    | Disabled       |
+| Strength | Infill               | 0              |
+| Speed    | Speed                | 100mm/s        |
+| Speed    | Dynamic acceleration | Disabled       |
 
 
 </br></br>
