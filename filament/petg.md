@@ -44,10 +44,15 @@ Tested using Bambu Labs Basic PETG.
 | Filament | Flow and PA | Pressure Advance     | Disabled |
 | Filament | Print Temp  | Nozzle: First Layer  | 260      |
 | Filament | Print Temp  | Nozzle: Other Layers | 245      |
-| Filament | Bed Temp    | Textured PEI         | 70       |
+| Filament | Bed Temp    | Textured PEI         | 80       |
 | Filament | Volumetric  | Max vol speed        | 14.9     |
 
 
 </br></br>
+| Tab      | Section           | Setting                 | Value    |
+| -------- | ----------------- | ----------------------- | -------- |
+| Cooling  | Cooling for Layer | No cooling for first    | 3 layers |
+| Cooling  | Part Cooling Fan  | Min fan speed threshold | 20%      |
+| Cooling  | Part Cooling Fan  | Max fan speed threshold | 40%      |
 
 
