@@ -18,8 +18,8 @@ Useful settings I have found. Tested on the Ender 3 v3 SE with unicorn hotend.
 | Speed     | First Layer Speed  | First layer               | 30mm/s   |
 | Speed     | First Layer Speed  | First layer infill        | 40mm/s   |
 | Speed     | First Layer Speed  | First layer travel speed  | 100mm/s  |
-| Speed     | Other Layers Speed | Outer wall                | 140mm/s  |
-| Speed     | Other Layers Speed | Inner wall                | 160mm/s  |
+| Speed     | Other Layers Speed | Outer wall                | 100mm/s  |
+| Speed     | Other Layers Speed | Inner wall                | 120mm/s  |
 
 
 
@@ -45,7 +45,7 @@ Tested using Bambu Labs Basic PETG.
 | Filament | Print Temp  | Nozzle: First Layer  | 260      |
 | Filament | Print Temp  | Nozzle: Other Layers | 245      |
 | Filament | Bed Temp    | Textured PEI         | 70       |
-| Filament | Volumetric  | Max vol speed        |          |
+| Filament | Volumetric  | Max vol speed        | 14.9     |
 
 
 </br></br>
