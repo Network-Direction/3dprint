@@ -43,8 +43,8 @@ Tested using Bambu Labs Basic PETG.
 
 | Tab      | Section     | Setting              | Value    |
 | -------- | ----------- | -------------------- | -------- |
-| Filament | Basic       | Shrinkage (XY)       |          |
-| Filament | Basic       | Shrinkage (Z)        |          |
+| Filament | Basic       | Shrinkage (XY)       | 100%     |
+| Filament | Basic       | Shrinkage (Z)        | 100%     |
 | Filament | Basic       | Min nozzle temp      | 230      |
 | Filament | Basic       | Max nozzle temp      | 260      |
 | Filament | Flow and PA | Flow Ratio           | 0.93     |
