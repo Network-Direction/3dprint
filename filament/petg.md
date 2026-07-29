@@ -56,3 +56,7 @@ Tested using Bambu Labs Basic PETG.
 | Cooling  | Part Cooling Fan  | Max fan speed threshold | 40%      |
 
 
+</br></br>
+| Tab       | Section           | Setting                 | Value    |
+| --------- | ----------------- | ----------------------- | -------- |
+| Overrides | Retraction        | Length                  | 1.2mm    |
