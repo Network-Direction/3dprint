@@ -59,12 +59,6 @@ Tested using Bambu Labs Basic PLA.
 
 
 
-</br></br>
-### Process Settings
-
-
-
-
 
 </br></br>
 ---
@@ -100,11 +94,4 @@ Tested using Sunlu Matte PLA.
 | Overrides | Retraction  | Wipe while retracting   | Enabled  |
 | Overrides | Retraction  | Wipe distance           | 1mm      |
 | Overrides | Retraction  | Amount before wipe      | 70%      |
-
-
-
-
-</br></br>
-### Process Settings
-
 
