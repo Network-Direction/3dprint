@@ -113,6 +113,12 @@ Calibration > Retraction
 
 Follow the guide here: [Retraction test](https://www.orcaslicer.com/wiki/calibration/retraction_calib)
 
+</br></br>
+For the Ender, use these settings:
+
+<img width="335" height="221" alt="image" src="https://github.com/user-attachments/assets/36b14e27-3f60-4614-ab8e-8ef9e7968cad" />
+
+
 
 </br></br>
 ---
