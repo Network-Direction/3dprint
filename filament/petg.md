@@ -15,6 +15,13 @@ Useful settings I have found. Tested on the Ender 3 v3 SE with unicorn hotend.
 </br></br>
 | Tab       | Section            | Setting                   | Value    |
 | --------- | ------------------ | ------------------------- | -------- |
+| Quality   | Precision          | X-Y Hole Compensation     | 0.17mm   |
+| Quality   | Precision          | X-Y Contour Compensation  |          |
+
+
+</br></br>
+| Tab       | Section            | Setting                   | Value    |
+| --------- | ------------------ | ------------------------- | -------- |
 | Speed     | First Layer Speed  | First layer               | 30mm/s   |
 | Speed     | First Layer Speed  | First layer infill        | 40mm/s   |
 | Speed     | First Layer Speed  | First layer travel speed  | 100mm/s  |
