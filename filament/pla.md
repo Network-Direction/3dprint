@@ -3,6 +3,37 @@
 Useful settings I have found. Tested on the Ender 3 v3 SE with unicorn hotend.
 
 
+
+</br></br>
+---
+## Process Settings
+
+</br></br>
+| Tab       | Section            | Setting                   | Value    |
+| --------- | ------------------ | ------------------------- | -------- |
+| Speed     | First Layer Speed  | First layer               | 30mm/s   |
+| Speed     | First Layer Speed  | First layer infill        | 40mm/s   |
+| Speed     | First Layer Speed  | First layer travel speed  | 100mm/s  |
+| Speed     | Other Layers Speed | Outer wall                | 140mm/s  |
+| Speed     | Other Layers Speed | Inner wall                | 160mm/s  |
+
+
+</br></br>
+> [!NOTE]
+> These next settings will vary per printer. See the [calibration guides](../calibration) to tune them.
+
+
+</br></br>
+| Tab       | Section            | Setting                   | Value    |
+| --------- | ------------------ | ------------------------- | -------- |
+| Quality   | Line width         | First layer               | 125%     |
+| Quality   | Precision          | X-Y hole compensation     | 0.12mm   |
+| Quality   | Precision          | X-Y contour compensation  | 0.2mm    |
+| Quality   | Walls and Surfaces | Bottom surface flow ratio | 1.02     |
+
+
+
+
 </br></br>
 ---
 ## Basic PLA
@@ -30,6 +61,7 @@ Tested using Bambu Labs Basic PLA.
 
 </br></br>
 ### Process Settings
+
 
 
 
@@ -74,8 +106,5 @@ Tested using Sunlu Matte PLA.
 
 </br></br>
 ### Process Settings
-
-
-
 
 
